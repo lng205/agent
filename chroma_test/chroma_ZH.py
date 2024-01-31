@@ -1,12 +1,10 @@
-import chromadb, os
+import chromadb
 chroma_client = chromadb.PersistentClient(path="database_ZH_lg")
 # chroma_client = chromadb.PersistentClient(path="database_ZH")
 
 # Embedding function
-openai_ef = chromadb.utils.embedding_functions.OpenAIEmbeddingFunction(
-                api_key=os.environ["OPENAI_API_KEY"],
-                model_name="text-embedding-3-large"
-            )
+API_KEY = "YOUR_API_KEY"
+openai_ef = chromadb.utils.embedding_functions.OpenAIEmbeddingFunction(api_key=API_KEY, model_name="text-embedding-3-large")
 
 def create_collection():
     collection = chroma_client.create_collection(name="memory", embedding_function=openai_ef)
