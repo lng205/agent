@@ -12,3 +12,4 @@
 - [OpenAI Embeddings model](https://platform.openai.com/docs/models/embeddings)
 - [Chorma vector database](https://www.trychroma.com/)
 - [Using Chroma for Embeddings Search](https://cookbook.openai.com/examples/vector_databases/chroma/using_chroma_for_embeddings_search)
+- [paper note](https://lng205.github.io/posts/agent/)
